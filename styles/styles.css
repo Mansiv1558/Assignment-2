@@ -6,12 +6,12 @@ body{
     margin-left: 70px;
 }
 
-h3{
+.sec-1-h3{
     margin-top: 40px;
     margin-bottom: 100px;
 }
 
-h1{
+.sec-1{
     font-size: 50px;
     line-height: 20px;
 }
@@ -38,4 +38,56 @@ h1{
 .half-width img{
     width: 60%;
     margin-left: 10px;
+}
+
+
+/*-------------
+    Section-2 
+ --------------*/
+ .sec-2{
+     text-align: center;
+ }
+
+ .fa-star{
+    font-size: 12px;
+}
+ .fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color: #aeaeae;
+}
+ 
+.shift-p{
+    line-height: 2px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.product {
+    box-shadow: 0 0 15px 5px;
+    max-width: 315px;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+
+.pink{
+    margin: 20px;
+    color: #E03B8B;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.fa-arrow-right{
+    margin-left: 5px;
 }
