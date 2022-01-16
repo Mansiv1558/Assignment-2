@@ -11,14 +11,11 @@ header, main{
     margin-left: 70px;
 }
 
-.sec-1-h3{
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
+
 
 .sec-1{
     font-size: 50px;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 .flexible-container{
@@ -172,14 +169,38 @@ footer{
 */
 
 @media only screen and (max-width:688px){
-    .sec-1-h3{
-        text-align: center;
+    .wrappper{
+        width: 100%;
     }
 
+    .image{
+        width: 500px;
+        margin-top: 20px;
+        margin-right: 60px;
+    }
+
+    .info{
+        margin-top: 200px;
+        width: 100%;
+        margin-right:00px;
+    }
+    .info p{
+        width: 100%;
+    }
     .products{
         grid-template-columns: repeat(1, 1fr);
     }
+    
+}
 
-    
-    
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .wrapper{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product{
+        flex-direction: column;
+    }
 }
